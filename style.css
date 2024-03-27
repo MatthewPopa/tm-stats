@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border-small: 12px 0 12px 0;
+    --skew: skewX(-10deg);
+    --unskew: skewX(10deg);
+    --text: #005F46;
+    --off-white: #E6F5F0;
+    --green: #6EFAA1;
+    --blue: #0033FF;
+    --red: #FF0000;
+    --black: #000000;
+}
+
+body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-style: italic;
+    margin: 0;
+    background-color: #030813;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 800;
+    list-style: none;
+}
+
+.container {
+    width: max(1600px, 90%);
+    transform: var(--skew);
+}
+
+header {
+    background-color: #00995C;
+    padding: 1.5rem 4rem;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px 0 0 0;
+}
+
+hgroup {
+    transform: var(--unskew);
+}
+
+.menu {
+    display: flex;
+    height: 58px;
+    background-color: rgba(0, 5, 20, 0.6);
+    width: fit-content;
+    border-radius: var(--border-small);
+    margin-top: auto;
+}
+
+.menu li {
+    padding: 0 30px;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #9DA6B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li span {
+    transform: var(--unskew);
+}
+
+.menu li.active {
+    background-color: #000514;
+    color: var(--green);
+    border-radius: var(--border-small);
+}
+
+main {
+    background-color: #00995C;
+    padding: 2.75rem 5rem;
+    margin-top: 4px;
+    border-radius: 0 0 18px 0;
+}
+
+.colors {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.colors > div {
+    flex: auto;
+    height: 18px;
+    background-color: var(--off-white);
+}
+
+.colors > div:nth-child(1) {
+    background-color: var(--off-white);
+}
+
+.colors > div:nth-child(2) {
+    background-color: var(--green);
+}
+
+.colors > div:nth-child(3) {
+    background-color: var(--blue);
+}
+
+.colors > div:nth-child(4) {
+    background-color: var(--red);
+}
+
+.colors > div:nth-child(5) {
+    background-color: var(--black);
+}
+
+.track-selection {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    color: var(--text);
+    gap: 1rem;
+}
+
+.track {
+    background-color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem;
+    min-height: 4rem;
+    position: relative;
+    overflow: clip;
+    transition: background-color .25s, color .5s;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: var(--text);
+    color: var(--off-white);
+}
+
+.track::before {
+    content: '';
+    background-image: url(medal_author.png);
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    transform: var(--unskew);
+    opacity: .5;
+}
+
+.track::after {
+    content: '';
+    background: linear-gradient(90deg, rgba(230,245,240,0) 0%, rgba(230,245,240,1) 80%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: var(--unskew);
+}
+
+.track:hover::after {
+    background: linear-gradient(90deg, rgba(0, 95, 70, 0) 0%, rgba(0, 95, 70, 1) 80%);
+}
+
+.track:first-of-type {
+    border-radius: 12px 0 0 0;
+}
+
+.track:last-of-type {
+    border-radius: 0 0 12px 0;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 800;
+    transform: var(--unskew);
+    width: 5rem;
+    z-index: 1;
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: 800;
+    transform: var(--unskew);
+    z-index: 1;
+}
