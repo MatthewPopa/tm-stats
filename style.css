@@ -58,7 +58,7 @@ h2 {
 }
 
 .container {
-    width: max(1600px, 90%);
+    width: clamp(90%, 90%, 1600px);
     transform: var(--skew);
 }
 
@@ -151,6 +151,19 @@ main {
     grid-template-columns: repeat(5, 1fr);
     color: var(--text);
     gap: 1rem;
+    
+    --grid-layout-gap: 1rem;
+    --grid-column-count: 5;
+    --grid-item--min-width: 250px;
+  
+    /**
+     * Calculated values.
+     */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+  
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
 }
 
 .track {
@@ -169,6 +182,7 @@ main {
 .track:hover {
     background-color: var(--text);
     color: var(--off-white);
+    transition: background-color .1s, color .1s;
 }
 
 .track::before {
@@ -208,7 +222,7 @@ main {
     font-size: 3rem;
     font-weight: 800;
     transform: var(--unskew);
-    width: 5rem;
+    width: 4rem;
     z-index: 1;
 }
 
@@ -217,4 +231,10 @@ main {
     font-weight: 800;
     transform: var(--unskew);
     z-index: 1;
+}
+
+@media (max-width: 1660px) {
+    .track-selection {
+        --grid-column-count: 4;
+    }
 }
