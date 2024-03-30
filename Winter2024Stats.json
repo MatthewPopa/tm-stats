@@ -1,0 +1,202 @@
+[
+    {
+        "name": "01",
+        "time": "1:08:21.78",
+        "finishes": "64",
+        "resets": "261",
+        "respawns": "67",
+        "author": "1:12"
+    },
+    {
+        "name": "02",
+        "time": "12:34.97",
+        "finishes": "5",
+        "resets": "43",
+        "respawns": "7",
+        "author": "1:27"
+    },
+    {
+        "name": "03",
+        "time": "1:17.45",
+        "finishes": "2",
+        "resets": "4",
+        "respawns": "0",
+        "author": "1:17"
+    },
+    {
+        "name": "04",
+        "time": "1:46.14",
+        "finishes": "2",
+        "resets": "5",
+        "respawns": "0",
+        "author": "1:46"
+    },
+    {
+        "name": "05",
+        "time": "1:15.50",
+        "finishes": "2",
+        "resets": "4",
+        "respawns": "0",
+        "author": "1:15"
+    },
+    {
+        "name": "06",
+        "time": "4:56.57",
+        "finishes": "5",
+        "resets": "13",
+        "respawns": "1",
+        "author": "4:56"
+    },
+    {
+        "name": "07",
+        "time": "12:23.52",
+        "finishes": "10",
+        "resets": "28",
+        "respawns": "4",
+        "author": "12:23"
+    },
+    {
+        "name": "08",
+        "time": "32:08.39",
+        "finishes": "23",
+        "resets": "117",
+        "respawns": "26",
+        "author": "6:24"
+    },
+    {
+        "name": "09",
+        "time": "1:58.20",
+        "finishes": "2",
+        "resets": "6",
+        "respawns": "0",
+        "author": "1:58"
+    },
+    {
+        "name": "10",
+        "time": "9:22.50",
+        "finishes": "6",
+        "resets": "25",
+        "respawns": "18",
+        "author": "9:22"
+    },
+    {
+        "name": "11",
+        "time": "5:10.85",
+        "finishes": "6",
+        "resets": "17",
+        "respawns": "0",
+        "author": "5:10"
+    },
+    {
+        "name": "12",
+        "time": "6:33.93",
+        "finishes": "5",
+        "resets": "16",
+        "respawns": "16",
+        "author": "6:33"
+    },
+    {
+        "name": "13",
+        "time": "10:25.92",
+        "finishes": "5",
+        "resets": "25",
+        "respawns": "16",
+        "author": "10:25"
+    },
+    {
+        "name": "14",
+        "time": "3:29.27",
+        "finishes": "4",
+        "resets": "8",
+        "respawns": "2",
+        "author": "3:29"
+    },
+    {
+        "name": "15",
+        "time": "13:15.91",
+        "finishes": "10",
+        "resets": "33",
+        "respawns": "11",
+        "author": "13:15"
+    },
+    {
+        "name": "16",
+        "time": "18:09.30",
+        "finishes": "8",
+        "resets": "37",
+        "respawns": "20",
+        "author": "18:09"
+    },
+    {
+        "name": "17",
+        "time": "8:24.28",
+        "finishes": "5",
+        "resets": "21",
+        "respawns": "3",
+        "author": "8:24"
+    },
+    {
+        "name": "18",
+        "time": "1:50:30.75",
+        "finishes": "41",
+        "resets": "283",
+        "respawns": "192",
+        "author": "1:15:30"
+    },
+    {
+        "name": "19",
+        "time": "11:55.78",
+        "finishes": "7",
+        "resets": "30",
+        "respawns": "14",
+        "author": "11:55"
+    },
+    {
+        "name": "20",
+        "time": "11:24.27",
+        "finishes": "5",
+        "resets": "29",
+        "respawns": "15",
+        "author": "11:24"
+    },
+    {
+        "name": "21",
+        "time": "29:53.45",
+        "finishes": "14",
+        "resets": "73",
+        "respawns": "24",
+        "author": "29:53"
+    },
+    {
+        "name": "22",
+        "time": "1:19:46.06",
+        "finishes": "17",
+        "resets": "174",
+        "respawns": "82",
+        "author": "1:19:46"
+    },
+    {
+        "name": "23",
+        "time": "46:37.10",
+        "finishes": "16",
+        "resets": "165",
+        "respawns": "55",
+        "author": "46:37"
+    },
+    {
+        "name": "24",
+        "time": "1:27:16.43",
+        "finishes": "20",
+        "resets": "230",
+        "respawns": "33",
+        "author": "1:27:16"
+    },
+    {
+        "name": "25",
+        "time": "2:28:49.17",
+        "finishes": "30",
+        "resets": "263",
+        "respawns": "159",
+        "author": "2:28:49"
+    }
+]
