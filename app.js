@@ -60,3 +60,21 @@ function fadeModal() {
     modal.style.opacity = '0';
     modal.style.visibility = 'hidden';
 }
+
+const menuBG = document.querySelector('.menu-background');
+const menu = document.querySelectorAll('.menu li');
+let backgroundSize = document.querySelector('.menu li.active').getBoundingClientRect();
+menuBG.style.left = '0px';
+menuBG.style.height = backgroundSize.height + 'px';
+menuBG.style.width = backgroundSize.width - 10 + 'px';
+
+menu.forEach((option) => {
+	option.addEventListener('mouseover', () => {
+        document.querySelector('li.active').classList.remove('active');
+		let position = option.getBoundingClientRect();
+		menuBG.style.left = option.offsetLeft + 'px';
+		menuBG.style.height = position.height + 'px';
+		menuBG.style.width = position.width - 10 + 'px';
+		option.classList.add('active');
+	});
+});

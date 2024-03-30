@@ -44,18 +44,28 @@ h2 {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 .nav-bar {
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 0 4rem;
+    gap: 5rem;
 }
 
-.site-title {
+.nav-bar li {
     font-size: 2rem;
     font-weight: 800;
     list-style: none;
+}
+
+.site-title {
+    margin-right: auto;
 }
 
 .container {
@@ -84,10 +94,10 @@ hgroup {
     width: fit-content;
     border-radius: var(--border-small);
     margin-top: auto;
+    position: relative;
 }
 
 .menu li {
-    padding: 0 30px;
     list-style: none;
     font-size: 2rem;
     font-weight: 800;
@@ -97,14 +107,26 @@ hgroup {
     justify-content: center;
 }
 
-.menu li span {
+.menu li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
     transform: var(--unskew);
+    transition: .25s;
 }
 
 .menu li.active {
-    background-color: #000514;
     color: var(--green);
+    /* background-color: #000514;
+    border-radius: var(--border-small); */
+}
+
+.menu-background {
+    background-color: #000514;
     border-radius: var(--border-small);
+	position: absolute;
+    transition: .25s;
 }
 
 main {
